@@ -7,7 +7,7 @@ var app = builder.Build();
 app.MapGet("/", async () =>
 {
     // Podmień na swój serwer i bazę
-    var connString = "Server=tcp:twoj-serwer.database.windows.net,1433;Database=twoja-baza;";
+    /*var connString = "Server=tcp:twoj-serwer.database.windows.net,1433;Database=twoja-baza;";
 
     var credential = new DefaultAzureCredential();
     var token = credential.GetToken(
@@ -24,6 +24,8 @@ app.MapGet("/", async () =>
     var dbName = await cmd.ExecuteScalarAsync();
 
     return $"Połączono z bazą: {dbName}";
+    */
+    return $"test ";
 });
 
 app.Run();
